@@ -2,6 +2,7 @@
 // Created by hank on 12/2/24.
 //
 #ifndef PUZZLE02
+#define PUZZLE02
 #include <sstream>
 
 namespace puzzle02 {

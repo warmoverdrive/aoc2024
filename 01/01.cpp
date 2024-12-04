@@ -2,7 +2,7 @@
 // Created by hank on 12/1/24.
 //
 #ifndef PUZZLE01
-
+#define PUZZLE01
 #include <fstream>
 #include <string>
 #include <vector>
