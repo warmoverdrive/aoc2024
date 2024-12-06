@@ -3,14 +3,17 @@
 #include "01/01.cpp"
 #include "02/02.cpp"
 #include "03/03.cpp"
+#include "04/04.cpp"
 
-int main()
+int main(int argc, char* argv[])
 {
-    std::vector<std::string> input = util::GetInputByLine("03/input.txt");
+    const std::string num = argv[1];
+    const std::string path = num + "/input.txt";
+    std::vector<std::string> input = util::GetInputByLine((path));
 
-    const int resultA = puzzle03::puzzleA(input);
+    const int resultA = puzzle04::puzzleA(input);
     std::cout << "Result Part A: " << resultA << std::endl;
-    const int resultB = puzzle03::puzzleB(input);
+    const int resultB = puzzle04::puzzleB(input);
     std::cout << "Result Part B: " << resultB << std::endl;
 
     return 0;
