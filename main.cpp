@@ -6,6 +6,7 @@
 #include "04/04.cpp"
 #include "05/05.cpp"
 #include "06/06.cpp"
+#include "07/07.cpp"
 
 int main(int argc, char* argv[])
 {
@@ -13,9 +14,9 @@ int main(int argc, char* argv[])
     const std::string path = num + "/input.txt";
     std::vector<std::string> input = util::GetInputByLine((path));
 
-    const int resultA = puzzle06::puzzleA(input);
+    const u_int32_t resultA = puzzle07::puzzleA(input);
     std::cout << "Result Part A: " << resultA << std::endl;
-    const int resultB = puzzle06::puzzleB(input);
+    const u_int32_t resultB = puzzle07::puzzleB(input);
     std::cout << "Result Part B: " << resultB << std::endl;
 
     return 0;
